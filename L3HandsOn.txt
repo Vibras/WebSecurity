@@ -1,0 +1,74 @@
+Lesson 3 Hands-On
+
+Find:
+2 vulnerabilities discovered this year
+An atom, RSS, or twitter feed that you can watch for notifications
+
+
+Web Framework
+Choice: Express (Node.js)
+
+Vulnerabitilies found in 2020
+
+1 - HTTP request smuggling using malformed Transfer-Encoding header (Critical) (CVE-2019-15605)
+	Affected Node.js versions can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system.
+
+2 - HTTP header values do not have trailing OWS trimmed (High) (CVE-2019-15606)
+	Optional whitespace should be trimmed from HTTP header values. Its presence may allow attackers to bypass security checks based on HTTP header values.
+
+Feed link to watch notifications: https://twitter.com/nodejs?lang=en
+Link to Vulnerabilities: https://nodejs.org/en/blog/vulnerability/february-2020-security-releases/
+
+
+
+
+Language/Platform
+Choice: C#/.Net
+
+Vulnerabitilies found in 2020
+
+1 - CVE-2020-1108 Denial-of-Service Vulnerability
+	A remote unauthenticated attacker could exploit this vulnerability by issuing specially crafted requests to the .NET Core or .NET Framework application.
+
+2 - CVE-2020-1476– .NET Framework Elevation of Privilege Vulnerability
+	An elevation of privilege vulnerability exists when ASP.NET or .NET Framework web applications running on IIS improperly allow access to cached files. An attacker who successfully exploited this vulnerability could gain access to restricted files. To exploit this vulnerability, an attacker would need to send a specially crafted request to an affected server. The update addresses the vulnerability by changing how ASP.NET and .NET Framework handle requests.
+
+Link to Vulnerabilities: https://visualstudiomagazine.com/articles/2020/06/09/dos-advisory.aspx | https://devblogs.microsoft.com/dotnet/net-framework-august-2020-security-and-quality-rollup-updates/
+Feed link to watch notifications: https://twitter.com/CsharpCorner?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+
+
+
+Operating System
+Choice: Linux 
+
+Vulnerabitilies found in 2020
+
+1 - CVE-2020-14386: Privilege Escalation Vulnerability in the Linux kernel
+	Specifically, in order for the vulnerability to be triggerable, we need the kernel to have AF_PACKET sockets enabled (CONFIG_PACKET=y) and the CAP_NET_RAW privilege for the triggering process, which can be obtained in an unprivileged user namespace if user namespaces are enabled (CONFIG_USER_NS=y) and accessible to unprivileged users. Surprisingly, this long list of constraints is satisfied by default in some distributions, like Ubuntu.
+
+2 - CVE-2020-10713: BootHole 
+	The vulnerability affects systems using Secure Boot, even if they are not using GRUB2. Almost all signed versions of GRUB2 are vulnerable, meaning virtually every Linux distribution is affected.
+
+Link to Vulnerabilities: https://unit42.paloaltonetworks.com/cve-2020-14386/ | https://www.helpnetsecurity.com/2020/07/30/cve-2020-10713/
+Feed link to watch notifications: https://www.linux.org/whats-new/
+
+
+
+Web Server
+Choice: Apache
+
+Vulnerabitilies found in 2020
+
+1 - (CVE-2020-1938) Ghostcat
+	By exploiting of the Ghostcat vulnerability, an attacker will be able to read the contents of configuration files and source code files of all webapps deployed on Tomcat. 
+
+2 - (CVE-2020-9490) Push Diary Crash on Specifically Crafted HTTP/2 Header
+	A specially crafted value for the 'Cache-Digest' header in a HTTP/2 request would result in a crash when the server actually tries to HTTP/2 PUSH a resource afterwards.
+
+Link to Vulnerabilities: https://blog.vulcan.io/what-is-the-new-apache-tomcat-vulnerability-ghostcat-cve-2020-1938-and-how-to-fix-it#:~:text=The%20Apache%20Tomcat%20servers%20that,in%20the%20Tomcat%20AJP%20protocol. | https://httpd.apache.org/security/vulnerabilities_24.html
+Feed link to watch notifications: https://www.cvedetails.com/vulnerability-list/vendor_id-45/Apache.html
+
+
+
+
+
